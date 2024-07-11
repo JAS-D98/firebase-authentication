@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
           const credential = FacebookAuthProvider.credentialFromResult(result);
           const user = result.user;
           console.log("User signed in with Facebook:", user);
-          window.location.href = "../logged.html";
         })
         .catch((error) => {
           const errorCode = error.code;
